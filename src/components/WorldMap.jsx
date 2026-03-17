@@ -29,7 +29,25 @@ function WorldMap() {
       position: [25.2, 55.3],
       cargo: "Diesel",
       heading: 270
-    }
+    },
+    {
+  name: "Persian Gulf Tanker",
+  position: [26.5, 52.3],
+  cargo: "Crude Oil",
+  heading: 180
+},
+{
+  name: "Singapore LNG Carrier",
+  position: [1.2, 103.9],
+  cargo: "LNG",
+  heading: 300
+},
+{
+  name: "Indian Ocean Fuel Carrier",
+  position: [-5.0, 70.0],
+  cargo: "Diesel",
+  heading: 90
+}
   ]);
 
   useEffect(() => {
@@ -49,7 +67,7 @@ function WorldMap() {
   }, []);
 
   return (
-    <MapContainer center={[20, 0]} zoom={2} style={{ height: "100vh", width: "100%" }}>
+    <MapContainer center={[10, 60]} zoom={2} style={{ height: "100vh", width: "100%" }}>
       
       <TileLayer
         attribution="© OpenStreetMap contributors"
